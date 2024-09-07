@@ -10,7 +10,7 @@ echo "Difference of this numbers is "$(($num1 - $num2))""
 
 echo "Product of this number is "$(($num1 * $num2))""
 
-echo "Quotient of this number is "$(($num1 / $num2))""
+echo "Quotient of this number is "$(echo "scale=2; $num1 / $num2" | bc)""
 
 
 
